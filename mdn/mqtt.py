@@ -14,12 +14,6 @@ def on_message(client, userdata, message):
 
     data = json.loads(message.payload)
 
-    # location = Location()
-    # location.driver_id = data['driver_id']
-    # location.lat = data['lat']
-    # location.lng = data['lng']
-    # location.save()
-
     # reply
     if 'driver_id' in data:
         print(f'reply message on topic {message.topic}')
